@@ -1,23 +1,46 @@
 <template>
 <div>
-<h1> enter hamming code </h1>
+<large class="title-heading"> enter hamming code</large>
+<large class="title-subheading"> check hamming code</large>
   <v-text-field
-            class="textbox centered-input"
-            append="hi text-md-center"
-            label="enter hamming code"
+            class=" textbox centered-input"
+            focus
   ></v-text-field>
   </div>
 </template>
 <style scoped>
+  .title-heading
+  {
+    position: absolute;
+    color: green;
+    font-family: monospace;
+    top: 4em;
+    left: 35vw;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .title-subheading
+  {
+    position: absolute;
+    color: purple;
+    font-family: monospace;
+    top: 17em;
+    left: 35vw;
+    font-size: 16px;
+    font-weight: bold;
+  }
   .textbox
   {
-    margin-top: 10em;
-    margin-left: 15em;
-    margin-right: 15em;
+    
+    display:inline-block;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 30vh;
     font-family: monospace;
     font-size: 2.6em;
     direction: RTL; 
     text-align: center;
+    font-weight: bold;
   }
   .centered-input >>> input {
       text-align: center
